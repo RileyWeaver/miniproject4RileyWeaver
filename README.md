@@ -49,4 +49,4 @@ Inspiration, code snippets, etc.
 * [Login/authentication](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Django/Authentication)
 * [Youtube](https://www.youtube.com/watch?v=UB7XFf0Q_M4)
 * [Tutorial](https://docs.djangoproject.com/en/4.2/)
-* [ChatGPT]((https://chatgpt.com/share/67f3098f-b0c0-8005-bd08-754c64af7082))
+* [ChatGPT](https://chatgpt.com/share/67f3098f-b0c0-8005-bd08-754c64af7082)
