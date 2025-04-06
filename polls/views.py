@@ -9,7 +9,8 @@ academic dishonesty, including but not limited to cheating, plagiarism, or the u
 '''
 
 from django.http import HttpResponseRedirect
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render,redirect
+from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse
 from django.views import generic
 
@@ -57,8 +58,14 @@ def vote(request, question_id):
         return HttpResponseRedirect(reverse("polls:results", args=(question.id,)))
 
 def about(request):
-    return render(
-        request,
-        "polls/about.html",
-    )
+    return render(request, 'polls/about.html')
 
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('polls:login')  # Redirect to login after registration
+    else:
+        form = UserCreationForm()
+    return render(request, 'polls/register.html', {'form': form})
