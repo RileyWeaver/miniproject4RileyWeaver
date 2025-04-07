@@ -10,7 +10,8 @@ I also found an additional that was loosely followed with login/authentication a
 understand login/authentication better, so I could incorporate those pages in my project myself. This project is a 
 polls website that I flavored into a Halo E-sports poll site. There is also the admin side iof these project that 
 shows how to easily manage the site, or you can create a account and just be a normal user. More information on that 
-will be in teh Executing Programs below. 
+will be in teh Executing Programs below. BootStrap is added on the login button on /polls/login and you successfully
+log in.
 
 ### Dependencies
 

@@ -1,7 +1,12 @@
-li a {
-    color: green;
+body {
+    margin: 0;
+    padding: 0;
+    background: white url("images/background.jpg") no-repeat;
+    background-size: cover;
 }
 
-body {
-    background: white url("images/background.jpg") no-repeat;
+li a {
+    color: green;
+    font-size: 2rem;
+    text-decoration: none;
 }

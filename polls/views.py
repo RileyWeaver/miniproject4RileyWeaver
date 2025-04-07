@@ -65,7 +65,7 @@ def register(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('polls:login')  # Redirect to login after registration
+            return redirect('polls:login')
     else:
         form = UserCreationForm()
     return render(request, 'polls/register.html', {'form': form})
